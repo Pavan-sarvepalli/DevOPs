@@ -43,7 +43,7 @@ public class BankingApp {
         // Creating a bank account
         System.out.print("Enter Account Holder Name: ");
         String name = scanner.nextLine();
-        BankAccount account = new BankAccount(name, 1000); // Initial balance $1000
+        BankAccount account = new BankAccount(name, 2000); // Initial balance $1000
 
         while (true) {
             System.out.println("\nBanking System Menu:");
