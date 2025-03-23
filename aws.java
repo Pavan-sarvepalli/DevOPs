@@ -33,12 +33,7 @@ class BankAccount {
     // Display balance
     public void displayBalance() {
         System.out.println(accountHolder + ", your current balance is: $" + balance);
-    }
-}
 
-public class BankingApp {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
         // Creating a bank account
         System.out.print("Enter Account Holder Name: ");
@@ -59,12 +54,7 @@ public class BankingApp {
                     System.out.print("Enter deposit amount: ");
                     double depositAmount = scanner.nextDouble();
                     account.deposit(depositAmount);
-                    break;
-                case 2:
-                    System.out.print("Enter withdrawal amount: ");
-                    double withdrawAmount = scanner.nextDouble();
-                    account.withdraw(withdrawAmount);
-                    break;
+
                 case 3:
                     account.displayBalance();
                     break;
